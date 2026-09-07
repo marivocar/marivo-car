@@ -117,7 +117,7 @@ $avis = $pdo->query("SELECT * FROM avis WHERE statut = 'Approuvé' ORDER BY date
             <div class="field">
                 <label for="vehicule_souhaite"><?= icon('car', 12) ?> Véhicule</label>
                 <select name="vehicule_souhaite" id="vehicule_souhaite">
-                    <option value="">Tous les véhicules   test</option>
+                    <option value="">Tous les véhicules</option>
                     <?php foreach ($tous_vehicules as $tv): ?>
                         <option value="<?= $tv['id'] ?>"><?= htmlspecialchars($tv['marque'].' '.$tv['modele']) ?></option>
                     <?php endforeach; ?>
